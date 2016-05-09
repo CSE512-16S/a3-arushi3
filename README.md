@@ -10,7 +10,7 @@ The time series data - usually energy, length of protein, distance from referenc
 * Radio buttons to select number of variables for plotting   
 * Drop down menus to select the variables of interest  
   
-![Screen shot of the interactive visualization tool](lib/screencapture.PNG)  
+![Screen shot of the interactive visualization tool](lib/screencapture.PNG =100x100)  
   
 ## Data Domain  
   This data come from a protein simulation - 4 LK-alpha 14 proteins (shown below) in water (not shown). The size of the proteins (radius of gyration), inter-protein distances, energy and other association parameters have been tracked during the simulation. This data usually fluctuates (a lot) within a range and occasionally jumps to a new state or value. Fluctuations capture the stability of the system and jumps are important to track rare-events in the simulations.  
