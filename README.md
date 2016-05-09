@@ -10,11 +10,11 @@ The time series data - usually energy, length of protein, distance from referenc
 * Radio buttons to select number of variables for plotting   
 * Drop down menus to select the variables of interest  
   
-![Screen shot of the interactive visualization tool](lib/screencapture.PNG =100x100)  
+<img src="lib/screencapture.PNG" width="500" height="600">
   
 ## Data Domain  
   This data come from a protein simulation - 4 LK-alpha 14 proteins (shown below) in water (not shown). The size of the proteins (radius of gyration), inter-protein distances, energy and other association parameters have been tracked during the simulation. This data usually fluctuates (a lot) within a range and occasionally jumps to a new state or value. Fluctuations capture the stability of the system and jumps are important to track rare-events in the simulations.  
-  ![3D visualization of the simulation box with proteins](lib/protein_image.png)  
+  <img src="lib/protein_image.png" width="500" height="500">  
   
 ## Reason for Choosing Time Curves  
 I liked the concept of Time Curves introduced in class by Professor Heer and later read the method from [the site](http://www.aviz.fr/~bbach/timecurves/). Since the protein variables are tracked over time, I felt that this could be a good option. I believe they are better than simple line graphs since it's easier to see clusters and outliers over the entire time range. It is common in our field to use [VMD](http://www.ks.uiuc.edu/Research/vmd/) to visualize the simulation in 3D and see how the protein is evolving. It is difficult to monitor numerous variables at the same time and very difficult to keep track of similarities/differences between two time steps.  
