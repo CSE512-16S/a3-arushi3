@@ -1,0 +1,30 @@
+body {
+    font: 20px helvetica;
+    text-align:center;
+    background-color: #FFFAFA;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+/* "auto" makes the left and right margins center the wrapper */
+h1 {
+    text-align: center;
+    color:#2F4F4F;
+}
+select {
+    font: 22px helvetica bolder;
+    background:beige;
+    color:#2F4F4F;
+
+}
+#wrap {
+    width: 900px;
+    margin: 0 auto;
+    font: 22px helvetica bolder;
+    color:#2F4F4F;
+}
