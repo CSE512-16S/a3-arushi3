@@ -12,6 +12,9 @@ The time series data - usually energy, length of protein, distance from referenc
   
 <img src="lib/screencapture.PNG" width="500" height="600">
   
+## Running the visualization  
+You can access the final visualization [here](http://cse512-16s.github.io/a3-arushi3/)
+
 ## Data Domain  
   This data come from a protein simulation - 4 LK-alpha 14 proteins (shown below) in water (not shown). The size of the proteins (radius of gyration), inter-protein distances, energy and other association parameters have been tracked during the simulation. This data usually fluctuates (a lot) within a range and occasionally jumps to a new state or value. Fluctuations capture the stability of the system and jumps are important to track rare-events in the simulations.  
   <img src="lib/protein_image.png" width="500" height="500">  
@@ -35,4 +38,4 @@ The project was implemented on these major fronts
 *  **Variable Selection** - Variable selectors had to be dynamic to support 1,2,3 variable plotting. The drop down menus were implemented to stay active only where the respective radio button was checked. Menu items were populated manually and updated the svg on change.
 *  **Interactions**  - There were 2 mouseover ineractions - one over circles which showed the information contained in each point and increased in size and another over paths which highlighted by increasing their size and opacityand showed an arrow for direction. Zooming in by scrolling or touchpad was also implemented. 
   
-Classic multi-dimensional scaling, variable selection, mouseover interactions and zooming took the least time since they were standard procedures(1-2 hours each). Obtaining the distance matrix, removing overlaps and dynamics coloring according to variables took the most time since I formulated the algorithm on my own(2-3 hrs each).
+Classic multi-dimensional scaling, variable selection, mouseover interactions, data formatting and zooming took the least time since they were standard procedures(1-2 hours each). Obtaining the distance matrix, removing overlaps and dynamics coloring according to variables took the most time since I formulated the algorithm on my own(2-3 hrs each). Styling and writing the summary took another 1-2 hours.
