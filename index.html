@@ -9,11 +9,52 @@
 		<div id="top">
 		<h1>Plotting Time Series Data From Protein Simulations Using Time Curves</h1>
 			<p>
-			Testing visualization!
+                Inspired by a recent paper about <a href="http://www.aviz.fr/~bbach/timecurves/">Time Curves</a>, I made an interactive visualization to study data derived from protein folding simulations in my research lab.
+                The motive of this project is to understand distributions in variables and correlations between variables that are not apparent in simple line graphs of variables changing over time.
+                This can also be a replacement to watching protein simulation movies where keeping note of several changing variables at the same time can be a formidable task (<a href="https://www.youtube.com/watch?v=S52tG1-64E8&list=PL418E1C62DD9FC8BA&index=34">Sample Protein Simulation video</a>).
 			</p>
+            <p>
+                <h3>Data Source</h3>
+                This data come from a protein simulation - 4 proteins (shown below) in water (not shown).
+                <img src="lib/protein_image.png" alt="Pictorial description of protein simulation" width="550" height="500"> </p>
+              <p>  The size of the protein (radius of gyration), inter-protein distance and other association parameters have been tracked during the simulation.
+            </p>
+            <p>
+                <h3>Visualization Features</h3>
+            Selected data is plotted in a two dimensional space. The location of each point depends on its similarity or dissimilarity with other points.
+            Data points which are similar are grouped together spatially and have the same color. Lines connecting data points show you the flow of time - lighter shades stand for earlier times and darker shades for later.
+            Look out for these <b>interactions</b>:
+            <ul>
+                <li>Information about each data point as you bring your mouse over</li>
+                <li>Paths highlight and show you their direction when you bring your mouse over</li>
+                <li>Zoom in and out using the touchpad or scroll keys</li>
+                <li>Drag the figure to focus on the areas of interest</li>
+                <li>Radio buttons to select number of variables for plotting</li>
+                <li>Drop down menus to select the variables of interest</li>
+            </ul>
+            </p>
+            <p>
+                <h3>Variable Descriptions</h3>
+            <ul style="list-style-type: none">
+                <li><b>Energy</b> - Value for the energy of the whole system (in kJ)</li>
+                <li><b>Coordination</b> - Distance between all four proteins</li>
+                <li><b>SS total</b> - Hydrogen bonding between proteins</li>
+                <li><b>Distance</b> - Distance between two proteins (in Angstrom)</li>
+                <li><b>Radius of Gyration</b> - Length of the protein (in Angstrom)</li>
+            </ul>
+            <h3>Interaction legend</h3>
+            <ul style="list-style-type: none">
+            <li><b>Line Color</b> - Light colors signify early time, and darker colors stand for later times</li>
+            <li><b>Circle Color</b> - Shows points with similar values of variables</li>
+                <li><b>Line on Mouseover</b> - Highlighted with an arrow pointing to the next point in the time series</li>
+                <li><b>Tooltip</b> - On moving mouse over circles it displays the data linked with each point</li>
+                <li><b>Zooming</b> - Scroll or use the touch pad to zoom in and move around the space</li>
+                </ul>
+            </p>
 		</div>
 
         <div>
+            <h3>Time Curve Visualization</h3>
             <label>Plot 1 Variable</label>
             <input id="plot1" type="radio" name="enable" checked onclick="updateplot1()">
             <select name="plot1_list" id="plot1_list" onchange="updateData(value)">
