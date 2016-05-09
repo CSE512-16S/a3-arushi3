@@ -12,6 +12,13 @@ body {
 }
 
 /* "auto" makes the left and right margins center the wrapper */
+ul {
+    text-align:left;
+}
+label {
+    font: 22px helvetica bolder;
+    text-align:left;
+}
 h1 {
     text-align: center;
     color:#2F4F4F;
